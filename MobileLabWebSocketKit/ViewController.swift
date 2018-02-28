@@ -39,22 +39,23 @@ class ViewController: UIViewController, WebSocketDelegate, UITextFieldDelegate {
     
 
     // Button actions connected from storyboard.
-    @IBAction func didTapUp(_ sender: UIButton) {
+    
+    @IBAction func didSwipeUp(_ sender: UISwipeGestureRecognizer) {
         sendDirectionMessage(.up)
     }
     
-    @IBAction func didTapRight(_ sender: UIButton) {
-        sendDirectionMessage(.right)
-    }
-    
-    @IBAction func didTapDown(_ sender: UIButton) {
+    @IBAction func didSwipeDown(_ sender: UISwipeGestureRecognizer) {
         sendDirectionMessage(.down)
     }
     
-    @IBAction func didTapLeft(_ sender: UIButton) {
+    @IBAction func didSwipeLeft(_ sender: UISwipeGestureRecognizer) {
         sendDirectionMessage(.left)
     }
     
+    @IBAction func didSwipeRight(_ sender: UISwipeGestureRecognizer) {
+        sendDirectionMessage(.right)
+    }
+   
     // Input text field.
     @IBOutlet weak var playerIdTextField: UITextField!
     
