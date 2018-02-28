@@ -11,4 +11,6 @@ target 'MobileLabWebSocketKit' do
   pod 'SwiftyJSON'
   pod 'SDWebImage’,’~> 4.0’
 
+  project 'MobileLabWebSocketKit.xcodeproj'
+
 end
